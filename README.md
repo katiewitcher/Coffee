@@ -5,10 +5,15 @@ Team Name:Team 7
 Team Members:
 
 Giovanna Palma - 
+
 Katie Witcher -
+
 Jack Macken - 
+
 Andrew Baich -
+
 Brooke Istishin -
+
 
 
 Problem Description:
