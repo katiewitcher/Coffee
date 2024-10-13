@@ -23,8 +23,7 @@ Menu Items can have many ingredients and ingredients (like coffee) can be in man
 Ingredients have one supplier but suppliers can supply many ingredients.
 Menu Items fall into one category, like “Breakfast”, and categories can have many menu items
 
-![Project1_Model FINAL](https://github.com/user-attachments/assets/270b1011-665a-485e-ae9e-bf321237bca1)
-
 <img width="962" alt="Screenshot 2024-10-13 at 6 25 51 PM" src="https://github.com/user-attachments/assets/7458f408-a2b0-44cb-bd5d-e0f50b30d22c">
+
 
 
