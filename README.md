@@ -33,7 +33,8 @@ Menu items represent the products sold by the coffee shops, such as different ty
   Ingredients represent the raw materials needed to prepare menu items. There is a one-to-many relationship between the Supplier and Ingredient entities, meaning that a supplier can provide multiple ingredients, but each ingredient is sourced from only one supplier.<br> 
   Suppliers provide the ingredients required to prepare the coffee shop’s menu items. Each supplier can supply multiple ingredients to different coffee shop locations, ensuring a steady flow of stock to maintain operations.<br> 
 
- ![image](https://github.com/user-attachments/assets/9da8a601-30d7-4f18-a820-39dc6bb87a52)
+ ![image](https://github.com/user-attachments/assets/3954aa73-4007-4d0f-9fe4-45ec53949eb0)
+
 
  
 ## Data Dictionary:
