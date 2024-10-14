@@ -43,10 +43,14 @@ Menu Items fall into one category, like “Breakfast”, and categories can have
  <img width="466" alt="image" src="https://github.com/user-attachments/assets/6b5d2034-aaf4-4111-9310-c09bf99dde96">
 
 
+
+
 1. Query 1 finds the most frequently ordered menu items by counting the occurrences of each menu item in the ‘OrderItem’ table. The results are also ordered by the number of occurrences of each menu item in descending order. 
  ![image](https://github.com/user-attachments/assets/e9f278f9-7fee-4470-93f0-8ef773893902)
 
 Query 1 allows managers to track what menu items are the most popular and see which ones are not selling well.  This is important for optimizing inventory levels to make sure the right amount of items are stocked. It can also help management make important decisions when designing or updating the menu to ensure customer satisfaction and further sales. Additionally, it will help management focus marketing and promotion efforts on popular items. Listing the results in descending order helps with efficiency when retrieving information about which menu items to promote and stock the most of.    
+
+
 
 
 2. Query 2 retrieves the employees who have processed more than 3 orders. It then organizes the number of orders each employee has processed in descending order. 
@@ -55,10 +59,14 @@ Query 1 allows managers to track what menu items are the most popular and see wh
 Query 2 allows managers to see employee performance on handling orders. This is important for understanding employee efficiency, time management, and overall employee performance. Managers can use this information for future schedules in order to optimize employee productivity and work distribution. This information can also help with goal and target setting for employees to motivate them. 
 
 
+
+
 3. Query 3 counts the frequency of each payment type, either credit, cash, or debit. It also orders the results by descending frequency. 
  ![image](https://github.com/user-attachments/assets/4568c0ae-5257-476d-a615-885771a1cb3b)
 
 Query 3 allows managers to understand customer preferences and which payment options to promote or expand. For instance, if the manager wanted to decide if the establishment should be accepted. Different payment methods can also come with varying fees (credit fees on transactions, etc.) which can help managers understand the most cost-effective methods to use. This can lead to managers potentially negotiating better rates or finding cost-saving opportunities. 
+
+
 
   
 4. Query 4 reports the total amount of all cash orders. 
@@ -66,17 +74,23 @@ Query 3 allows managers to understand customer preferences and which payment opt
 
 Query 4 allows managers to have an immediate snapshot of the business’s daily revenue to help understand the company’s financial health. Having information about the business’s cash flow helps to ensure the business is functioning at optimal liquidity to cover expenses. It also helps managers to evaluate if sales goals are being met and identify if the business has a steady cash flow. 
 
+
+
  
 5. Query 5 retrieves all ingredients where the quantity in stock is less than 30 at the location. 
  ![image](https://github.com/user-attachments/assets/115a5a66-bd0e-482e-8d99-831fc13314d5)
 
 Query 5 allows managers to maintain efficient inventory management by monitoring low stock levels. This will allow for optimal inventory levels and ensure that there is enough stock of ingredients for the items without over-ordering. Managers will be able to better meet customer demand and avoid loss of business. Knowing the low stock quantity will also aid cost control, helping managers reorder ingredients at the most optimal time and plan ahead while minimizing waste. 
 
+
+
    
 6. Query 6 selects the average total sales from each category of menu items. 
  ![image](https://github.com/user-attachments/assets/e74de975-4c37-4fc0-8d64-24a43a214d28)
 
 Query 6 allows managers to understand total sales by category, helping them grasp which product categories are contributing most to revenue. By comparing these sales figures with associated costs, the coffee shop could find out which categories (e.g., coffee, pastries, etc.) offer the highest profitability. This may allow for a variety of things - like optimizing pricing, managing inventory more efficiently, and focusing promotional efforts on the best categories.
+
+
 
    
 7. Query 7 shows how many employees each boss is responsible for managing. 
@@ -85,16 +99,22 @@ Query 6 allows managers to understand total sales by category, helping them gras
 Query 7 can help the coffee shop when evaluating effective management and workload distribution. By tracking the number of employees reporting to each boss, they can balance team sizes, prevent overburdening managers, and identify areas where additional leadership may be needed. 
 
 
+
+
 8. Query 8 reports each supplier name that supplies more ingredients than the average amount of ingredients that each supplier supplies.
  ![image](https://github.com/user-attachments/assets/0e155f29-6bcb-46f7-859a-28198e0cd4db)
 
 Query 8 allows managers to track how much stock comes from each supplier with shows the reliability and performance of suppliers. This can help to hold suppliers accountable to their delivery schedules and order quantity requests. It also allows for managers to maintain optimal inventory levels by having a better understanding of how many recipes and menu items are reliant on which suppliers. If the business is too reliant on one supplier for its ingredients and that supplier has issues such as delays or supply shortages there could be increased risk. It is important for managers to diversify their supply chain to mitigate operational disruption. 
 
 
+
+
 9. Query 9 reports menu items that have not been ordered yet. (Items that appear in no Orders by checking OrderItems). 
  ![image](https://github.com/user-attachments/assets/033a9078-c856-42d6-aff6-f0ec185a2fd8)
 
 Query 9 allows managers to track how many items are still available for purchase. This can help to quickly identify what items need to be restocked, allowing for better efficiency and inventory management efforts. It can also help managers to identify which menu items may be less popular, aiding menu design. 
+
+
  
 
 10. Query 10 reports the id of employees that have processed Criag’s order. 
@@ -110,4 +130,3 @@ Name of database: cs_gcp90285
 Additional information: Each Each query listed above is marked in the database using stored procedures which can be called using the following format: CALL TP_Q1();
 
 
-![image](https://github.com/user-attachments/assets/f99b4105-e40a-47a6-a5e9-26a3b68b434d)
