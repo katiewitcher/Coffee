@@ -1,8 +1,9 @@
-# MIST 4610: Group Project 1 Information
- 
-Team name and members:
-Include information about the name of the team, the names of all team members as well as links to their corresponding GitHub repos that have the project on them.
-<br> 
+# MIST 4610: Team 7 Group Project 1 
+
+## Team Name 
+Team 7
+<br>  
+## Team Members
 Giovanna Palma - @giovannapalma
 <br> 
 Katie Witcher - @katiewitcher 
@@ -14,11 +15,11 @@ Andrew Baich - @andrewbaich
 Brooke Istishin - @brookeistishin 
 <br> 
  
-# Scenario description:
+## Scenario description:
 Our project models a small, local coffee shop chain in Georgia, operating multiple locations under unique names, but all managed centrally with a unified menu. The owner oversees all locations using a central data center to streamline operations.
 Key entities in the database include Customer, Order, Employee, Coffee Shop, OrderItem, MenuItem, RecipeItem, Ingredients, Supplier, and Category. These entities and their relationships allow the database to efficiently track customer visits, the details of their orders, payment methods, and the employee handling each transaction at a specific location. Additionally, the database stores information on the menu items ordered, their ingredients, and the corresponding recipes. It also manages stock levels and tracks suppliers for each ingredient, ensuring a seamless supply chain.
 
-# Data Model:
+## Data Model:
    Each customer is uniquely identified and can place multiple orders over time. There is a one-to-many relationship between the Customer and Order entities, meaning that a customer can make many orders, but an order is linked to only one customer. <br> 
   Orders capture the details of a customer’s purchase, including the date of the order and the total amount. Each order is associated with one customer and one employee, reflecting that the order is processed by a specific employee at a given coffee shop. However, each employee can handle multiple orders, creating a one-to-many relationship between the Employee and Order entities.<br> 
   Employees are linked to a specific coffee shop location and are responsible for handling customer orders. There is a one-to-many relationship between the CoffeeShop and Employee entities, indicating that a coffee shop can have multiple employees, but each employee works at only one coffee shop. Additionally, each employee has a boss, represented by a one-to-many recursive relationship where one employee can manage several others.<br> 
@@ -33,7 +34,7 @@ Menu items represent the products sold by the coffee shops, such as different ty
  ![image](https://github.com/user-attachments/assets/9da8a601-30d7-4f18-a820-39dc6bb87a52)
 
  
-# Data Dictionary:
+## Data Dictionary:
 <img width="468" alt="image" src="https://github.com/user-attachments/assets/40f72c6c-890b-47a8-924e-e290f165783d">
 <br>
 <img width="468" alt="image" src="https://github.com/user-attachments/assets/c7a28666-8024-471a-b94a-38e19fa23bc0">
@@ -56,7 +57,7 @@ Menu items represent the products sold by the coffee shops, such as different ty
 <br>
 
  
-# TEN QUERIES:
+## TEN QUERIES:
  <img width="466" alt="image" src="https://github.com/user-attachments/assets/6b5d2034-aaf4-4111-9310-c09bf99dde96">
 <br>
 
@@ -141,7 +142,7 @@ Query 10 allows managers to access information that would be helpful in the even
 <br>
 <br> 
  
-# Database information:
+## Database information:
 Name of database: cs_gcp90285
 
 Additional information: Each Each query listed above is marked in the database using stored procedures which can be called using the following format: CALL TP_Q1();
