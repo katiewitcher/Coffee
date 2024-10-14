@@ -4,15 +4,17 @@
 Team 7
 <br>  
 ## Team Members
-Giovanna Palma - @gpalma77
+Giovanna Palma - [@gpalma77](https://github.com/gpalma77/MIST-4610-Project
+)
 <br> 
-Katie Witcher - @katiewitcher 
+Katie Witcher - [@katiewitcher](https://github.com/katiewitcher/Coffee)
 <br> 
-Jack Macken- @jackmacken
+Jack Macken- [@jackmacken](https://github.com/jackmacken/4610Project)
 <br> 
-Andrew Baich - @andrewbaich
+Andrew Baich - [@andrewbaich]()
 <br> 
-Brooke Istishin - @brookeistishin 
+Brooke Istishin - [@brookeistishin](https://github.com/brookeistishin/MIST4610GroupProject1
+) 
 <br> 
  
 ## Scenario description:
