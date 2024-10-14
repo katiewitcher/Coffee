@@ -19,18 +19,20 @@ Our project models a small, local coffee shop chain in Georgia, operating multip
 Key entities in the database include Customer, Order, Employee, Coffee Shop, OrderItem, MenuItem, RecipeItem, Ingredients, Supplier, and Category. These entities and their relationships allow the database to efficiently track customer visits, the details of their orders, payment methods, and the employee handling each transaction at a specific location. Additionally, the database stores information on the menu items ordered, their ingredients, and the corresponding recipes. It also manages stock levels and tracks suppliers for each ingredient, ensuring a seamless supply chain.
 
 # Data Model:
-Customers can make many orders, an order can only be made by one customer.
-An order can only be taken by one employee and an employee can take many orders.
-Many Employees work at a coffee shop but employees are only employed at one coffee shop.
-An employee can only have one boss but a boss can be in charge of many employees.
-Orders can have many menu items and menu items can appear in multiple orders – therefore creating a third entity between the two, ‘Order Item” which contains every time a menu item appears in an order.
-Menu Items can have many ingredients and ingredients (like coffee) can be in many menu items, therefore the entity between them, “RecipeItem” details the ingredient amount in each product.
-Ingredients have one supplier but suppliers can supply many ingredients.
-Menu Items fall into one category, like “Breakfast”, and categories can have many menu items
-  ![image](https://github.com/user-attachments/assets/d45b6a4e-3ba1-49a1-80f3-036237eeb288)
+   Each customer is uniquely identified and can place multiple orders over time. There is a one-to-many relationship between the Customer and Order entities, meaning that a customer can make many orders, but an order is linked to only one customer. <br> 
+  Orders capture the details of a customer’s purchase, including the date of the order and the total amount. Each order is associated with one customer and one employee, reflecting that the order is processed by a specific employee at a given coffee shop. However, each employee can handle multiple orders, creating a one-to-many relationship between the Employee and Order entities.<br> 
+  Employees are linked to a specific coffee shop location and are responsible for handling customer orders. There is a one-to-many relationship between the CoffeeShop and Employee entities, indicating that a coffee shop can have multiple employees, but each employee works at only one coffee shop. Additionally, each employee has a boss, represented by a one-to-many recursive relationship where one employee can manage several others.<br> 
+  Each coffee shop location is uniquely identified and operates under a unified menu system. There are five coffee shops: Witcher Brew, Andrew's Affogato, Brooke Beanery, Gio's Grind House, and Macken Macchiato. Coffee Shop has a one-to-one relationship with the Employee entity as one employee is the boss of one store, and each store only has one employee as the boss (store manager).Coffee Shop also has a one-to-many relationship with the Ingredients entity as a coffee shop can hold inventory of multiple ingredients but a specific ingredient is only held at one store. <br> 
+  Orders often contain multiple menu items, such as different types of coffees or pastries. The OrderItem entity acts as a weak entity between Order and MenuItem, capturing the details of which menu items were included in each order and in what quantity. An order can contain many menu items, and a menu item can be included in multiple orders, making OrderItem an associative entity.<br> 
+Menu items represent the products sold by the coffee shops, such as different types of drinks or food. Each menu item belongs to one category, such as "Breakfast”.. There is a one-to-many relationship between the     
+  Category and MenuItem entities, meaning that a category can contain many menu items, but a menu item belongs to only one category.<br> 
+  The RecipeItem entity details the ingredients required to create each menu item. A single menu item can require multiple ingredients, such as coffee, sugar, or milk, while the same ingredient can be used in many different menu items. This is represented by the many-to-many relationship between MenuItem and Ingredient.
+  Ingredients represent the raw materials needed to prepare menu items. There is a one-to-many relationship between the Supplier and Ingredient entities, meaning that a supplier can provide multiple ingredients, but each ingredient is sourced from only one supplier.<br> 
+  Suppliers provide the ingredients required to prepare the coffee shop’s menu items. Each supplier can supply multiple ingredients to different coffee shop locations, ensuring a steady flow of stock to maintain operations.<br> 
 
+ ![image](https://github.com/user-attachments/assets/9da8a601-30d7-4f18-a820-39dc6bb87a52)
 
-
+ 
 # Data Dictionary:
 <img width="468" alt="image" src="https://github.com/user-attachments/assets/40f72c6c-890b-47a8-924e-e290f165783d">
 <br>
