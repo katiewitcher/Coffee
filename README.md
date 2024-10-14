@@ -4,7 +4,7 @@
 Team 7
 <br>  
 ## Team Members
-Giovanna Palma - @giovannapalma
+Giovanna Palma - @gpalma77
 <br> 
 Katie Witcher - @katiewitcher 
 <br> 
